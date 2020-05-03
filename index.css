@@ -1,10 +1,78 @@
-.sidebar{
-    width: 200px;
-    z-index: 1;
-    top: 0;
-    left: 0;
+html{
+    background-color: rgb(247, 181, 181);
 }
 
-.main{
-    margin-left: 200px;
+.navbar{
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    
+    /* border-bottom-style: none; */
+    font-family: "NS-Light";
+    position: fixed;
+ 
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+#intro:hover{
+    font-family: "NS-Regular";
+}
+
+#about{
+    padding-top: 5px;
+}
+
+#about:hover{
+    font-family: "NS-Regular";
+}
+
+
+
+
+.intro{
+    text-align: center;
+    font-family: "NS-Regular";
+    padding-top: 10%;
+    padding-bottom: 30%;
+}
+
+#hello{
+    font-size: 6vw; 
+}
+
+#hello2{
+    font-size: 1vw;
+    font-family: "NS-Regular";
+}
+
+.about{
+    /* margin-top: 1000px; */
+    padding-bottom: 30%;
+}
+
+@font-face{
+    font-family: "NS-Bold";
+    src: url(./font/NotoSansJP-Bold.otf);
+}
+@font-face{
+    font-family: "NS-Medium";
+    src: url(./font/NotoSansJP-Medium.otf);
+}
+@font-face{
+    font-family: "NS-Regular";
+    src: url(./font/NotoSansJP-Regular.otf);
+}
+@font-face{
+    font-family: "NS-Light";
+    src: url(./font/NotoSansJP-Light.otf);
+}
+@font-face{
+    font-family: "NS-Black";
+    src: url(./font/NotoSansJP-Black.otf);
+}
+@font-face{
+    font-family: "NS-Thin";
+    src: url(./font/NotoSansJP-Thin.otf);
 }
