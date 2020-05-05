@@ -57,12 +57,21 @@ h.ab{
 }
 
 .nav-right a{
-    /* float: left; */
     
     color: #f2f2f2;
     text-decoration: none;
-    padding-right: 25px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 100%;
+    padding-bottom: 100%;
     font-size: 17px;
+}
+
+.nav-right a:hover{
+    background-image: url("./photos/moonnew.jpg");
+    color: #000000;
+    /* font-family: "NS-Regular"; */
+    
 }
 
 /* #intro1:hover{
