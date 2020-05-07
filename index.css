@@ -204,6 +204,22 @@ a.resumeLink:hover{
     padding-bottom: 50%;
 }
 
+.linkedin{
+    
+    background-image: url("./icons/mars.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
+.linkedin:hover{
+    background-image: none;
+    background-color: #0077B5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
 /* a.linkedin{
     width: 0px;
     height: 0px;
