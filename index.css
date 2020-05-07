@@ -1,6 +1,6 @@
 html{
     background-color: rgb(226, 226, 226);
-    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,6 +22,11 @@ h.bold{
     overflow: hidden;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+#fancy{
+    color: rgb(255, 142, 142);
+    text-decoration: underline;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -194,14 +199,17 @@ a.resumeLink{
 
 a.resumeLink:hover{
     /* font-family: "NS-Regular"; */
-    color: rgb(255, 147, 147);
-    border-color: rgb(255, 147, 147);
+    color: rgb(255, 100, 100);
+    border-color: rgb(255, 142, 142);
+    background-image: url("./photos/moonnew.jpg");
+    background-position: center;
 }
 
 .contact{
     text-align: center;
     font-family: "NS-Light";
-    padding-bottom: 50%;
+    padding-bottom: 30%;
+    font-size: 20px;
 }
 
 .linkedin{
