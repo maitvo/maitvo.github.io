@@ -20,8 +20,8 @@ h.bold{
 .main{
     /* padding-left: 10%; */
     overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 #fancy{
@@ -127,11 +127,17 @@ h.bold{
 
 
 .intro{
-    text-align: center;
-    font-family: "NS-Regular";
+    /* margin: none; */
+    
+    /* text-align: left; */
+    
     padding-top: 10%;
     padding-bottom: 30%;
+    background-image: url("./photos/praguecut.jpg");
+    background-size: cover;
 }
+
+
 
 #hello{
     font-size: 6vw; 
@@ -140,6 +146,11 @@ h.bold{
 #hello2{
     font-size: 20px;
     font-family: "NS-Light";
+}
+
+#intro-text{
+    padding-left: 10%;
+    font-family: "NS-Regular";
 }
 
 .about{
