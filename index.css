@@ -131,9 +131,12 @@ h.bold{
     
     /* text-align: left; */
     
-    /* padding-top: 10%; */
-    /* padding-bottom: 30%; */
+    padding-top: 10%;
+    padding-bottom: 35%;
     background-image: url("./photos/praguecut.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
