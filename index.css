@@ -131,21 +131,27 @@ h.bold{
     
     /* text-align: left; */
     
-    padding-top: 10%;
+    color: rgb(255, 255, 255);
+    padding-top: 12%;
     padding-bottom: 35%;
     background-image: url("./photos/praguecut.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+/* 
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     /* height: 100%; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url("./photos/prague-profile-mobile.jpg");
+    }
+}
 
 
 
@@ -155,7 +161,7 @@ h.bold{
 
 #hello2{
     font-size: 20px;
-    font-family: "NS-Light";
+    font-family: "NS-Regular";
 }
 
 #intro-text{
@@ -166,7 +172,9 @@ h.bold{
 .about{
     /* margin-top: 1000px; */
     /* padding-top: 50%; */
-    text-align: center;
+    margin: 10px;
+    padding-left: 12%;
+    text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
     padding-bottom: 30%;
@@ -193,7 +201,9 @@ p.eduabt{
 }  */
 
 .experience{
-    text-align: center;
+    margin: 10px;
+    padding-left: 12%;
+    text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
     padding-bottom: 30%;
@@ -226,8 +236,28 @@ a.resumeLink:hover{
     background-position: center;
 }
 
+a.test{
+    background-image: url("./icons/1x/Asset\ 2.png");
+    font-size: 20px;
+    /* padding: 100px; */
+    padding-top: 50px;
+    padding-bottom: 200px;
+    padding-right: 300px;
+    /* padding-left: 200px; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(59, 59, 59);
+}
+
+a.test:hover{
+    background: none;
+    background-image: url("./icons/1x/Asset\ 4.png");
+}
+
 .contact{
-    text-align: center;
+    margin: 10px;
+    padding-left: 12%;
+    text-align: left;
     font-family: "NS-Light";
     padding-bottom: 30%;
     font-size: 20px;

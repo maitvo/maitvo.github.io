@@ -39,7 +39,7 @@ setTimeout(function() {
 
     // while(true) {
 
-    addContent("Nice to meet you.", function() {
+    addContent("Welcome.", function() {
         deleteContent(function() {
             addContent("I'm Mai.");
         })
