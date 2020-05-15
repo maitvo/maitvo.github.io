@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     scroll-behavior: smooth;
 }
 
@@ -17,12 +17,6 @@ h.bold{
     font-family: "NS-Regular";
 }
 
-.main{
-    /* padding-left: 10%; */
-    overflow: hidden;
-    /* margin-left: 50px;
-    margin-right: 50px; */
-}
 
 #fancy{
     color: rgb(255, 142, 142);
@@ -33,30 +27,10 @@ h.bold{
 
 .navbar{
     overflow: hidden;
-
     padding-top: 1%;
     padding-bottom: 1%;
-
-    
-    
-    /* right: 0%; */
-    /* padding-left: 5%; */
-    /* padding-left: 0%; */
-
-
-    /* padding-left: 1.5%;
-    padding-right: 1.5%;
-    padding-top: 2%;
-    padding-bottom: 2%; */
-    /* background-color: rgb(243, 109, 109); */
-    /* border-style: dotted; */
     background-image: url("./photos/stars.jpg");
     opacity: 70%;
-    /* background: transparent; */
-    
-    /* border: rgb(0, 0, 0); */
-    
-    /* border-bottom-style: none; */
     font-family: "NS-Light";
     position: fixed;
     width: 100%;
@@ -81,82 +55,34 @@ h.bold{
 .nav-right a:hover{
     background-image: url("./photos/moonnew.jpg");
     color: rgb(255, 31, 31);
-    /* font-family: "NS-Regular"; */
-    
 }
-
-/* #intro1:hover{
-    font-family: "NS-Regular";
-}
-
-#about1{
-    padding-top: 5px;
-}
-
-#about1:hover{
-    font-family: "NS-Regular";
-}
-
-#school{
-    padding-top: 5px;
-}
-
-#school:hover{
-    font-family: "NS-Regular";
-}
-
-#exp{
-    padding-top: 5px;
-}
-
-#exp:hover{
-    font-family: "NS-Regular";
-}
-
-#connect{
-    padding-top: 5px;
-}
-
-#connect:hover{
-    font-family: "NS-Regular";
-} */
 
 /* ----------------------------------------------------------------------------------------------------- */
 
 
 
 
-.intro{
-    /* margin: none; */
-    
-    /* text-align: left; */
-    
+.intro{    
     color: rgb(255, 255, 255);
-    padding-top: 12%;
-    padding-bottom: 35%;
+    padding-top: 200px;
+    padding-bottom: 500px;
     background-image: url("./photos/praguecut.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-/* 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
-    /* height: 100%; */
-    /* overflow: hidden; */
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     body {
         background-image: url("./photos/prague-profile-mobile.jpg");
     }
-}
+} */
 
 
 
 #hello{
-    font-size: 6vw; 
+    font-size: 120px; 
 }
 
 #hello2{
@@ -172,41 +98,27 @@ h.bold{
 .about{
     /* margin-top: 1000px; */
     /* padding-top: 50%; */
+
+    background-color: rgb(255, 190, 190);
     margin: 10px;
     padding-left: 12%;
     text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
-    padding-bottom: 30%;
+    padding-bottom: 200px;
 
 }
 
- /* .education{
-    padding-bottom: 30%;
-    padding-left: 20%;
-}
-
-#schooltype{
-    padding-top: 5%;
-    font-family: "NS-Bold";
-    font-size: 1vw;
-}
-
-#schoolabt{
-    font-family: "NS-Regular";
-}
-
-p.eduabt{
-    font-family: "NS-Light";
-}  */
+/* ---------------------------------------------------------------------------------- */
 
 .experience{
+    background-color: rgb(252, 212, 212);
     margin: 10px;
     padding-left: 12%;
     text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
-    padding-bottom: 30%;
+    padding-bottom: 200px;
 }
 
 #header{
@@ -236,71 +148,68 @@ a.resumeLink:hover{
     background-position: center;
 }
 
-a.test{
-    background-image: url("./icons/1x/Asset\ 2.png");
-    font-size: 20px;
-    /* padding: 100px; */
-    padding-top: 50px;
-    padding-bottom: 200px;
-    padding-right: 300px;
-    /* padding-left: 200px; */
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(59, 59, 59);
-}
-
-a.test:hover{
-    background: none;
-    background-image: url("./icons/1x/Asset\ 4.png");
-}
+/* --------------------------------------------------------------------------------------------- */
 
 .contact{
+
+    background-color: rgb(255, 238, 238);
     margin: 10px;
     padding-left: 12%;
     text-align: left;
     font-family: "NS-Light";
-    padding-bottom: 30%;
+    padding-bottom: 200px;
     font-size: 20px;
 }
 
-.linkedin{
-    
-    background-image: url("./icons/mars.jpg");
-    background-repeat: no-repeat;
+a.linkedin{
+    background-image: url("./icons/1x/Asset\ 2.png");
     background-position: center;
-    background-size: 200px;
-}
+    background-size: 100%;
 
-.linkedin:hover{
-    background-image: none;
-    background-color: #0077B5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 11%;
+    padding-left: 11%;
+    /* border-style: solid; */
+    /* border-width: 2px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px;
-}
-
-/* a.linkedin{
-    width: 0px;
-    height: 0px;
-    background-image: url("./icons/linkedin_new.jpg");
+    border-color: rgb(59, 59, 59); */
 }
 
 a.linkedin:hover{
-    background-image: url("./icons/linkedin_mars.JPG");
-} */
-
-a img:last-child {
-    display: none;  
-}
-a:hover img:last-child {
-display: block;  
-}
-a:hover img:first-child {
-display: none;  
+    background: none;
+    background-image: url("./icons/1x/Asset\ 13.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
+a.space{
+    padding-left: 100px;
+}
 
+a.git{
+    background-image: url("./icons/1x/Asset\ 8.png");
+    background-position: center;
+    background-size: 100%;
 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 11%;
+    padding-left: 11%;
+    /* border-style: solid; */
+    /* border-width: 2px;
+    border-color: rgb(59, 59, 59);
+    background-repeat: no-repeat; */
+}
+
+a.git:hover{
+    background: none;
+    background-size: 100%;
+    background-image: url("./icons/1x/Asset\ 18.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
