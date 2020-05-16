@@ -23,6 +23,20 @@ h.bold{
     text-decoration: underline;
 }
 
+.divspace{
+    padding: 30px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
 /* --------------------------------------------------------------------------------------------------- */
 
 .navbar{
@@ -57,6 +71,7 @@ h.bold{
     color: rgb(255, 31, 31);
 }
 
+
 /* ----------------------------------------------------------------------------------------------------- */
 
 
@@ -73,11 +88,6 @@ h.bold{
     background-size: cover;
 }
 
-/* @media only screen and (max-width: 767px) {
-    body {
-        background-image: url("./photos/prague-profile-mobile.jpg");
-    }
-} */
 
 
 
@@ -91,7 +101,8 @@ h.bold{
 }
 
 #intro-text{
-    padding-left: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
     font-family: "NS-Regular";
 }
 
@@ -102,6 +113,7 @@ h.bold{
     background-color: rgb(255, 190, 190);
     margin: 10px;
     padding-left: 12%;
+    padding-right: 12%;
     text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
@@ -115,6 +127,7 @@ h.bold{
     background-color: rgb(252, 212, 212);
     margin: 10px;
     padding-left: 12%;
+    padding-right: 12%;
     text-align: left;
     font-family: "NS-Light";
     font-size: 20px;
@@ -122,7 +135,7 @@ h.bold{
 }
 
 #header{
-    padding-top: 6%;
+    padding-top: 90px;
     padding-bottom: 65px;
     font-size: 40px;
     font-family: "NS-Regular";
@@ -131,6 +144,7 @@ h.bold{
 
 a.resumeLink{
     font-size: 20px;
+    font-family: "NS-Regular";
     padding: 20px;
     border-style: solid;
     border-width: 2px;
@@ -148,6 +162,11 @@ a.resumeLink:hover{
     background-position: center;
 }
 
+.reslink{
+    width: 100%;
+    text-align: center;
+}
+
 /* --------------------------------------------------------------------------------------------- */
 
 .contact{
@@ -155,15 +174,24 @@ a.resumeLink:hover{
     background-color: rgb(255, 238, 238);
     margin: 10px;
     padding-left: 12%;
+    padding-right: 12%;
     text-align: left;
     font-family: "NS-Light";
     padding-bottom: 200px;
     font-size: 20px;
 }
 
+.links{
+    padding-top: 12%;
+    padding-bottom: 12%;
+    width: 100%;
+    text-align: center;
+}
+
 a.linkedin{
     background-image: url("./icons/1x/Asset\ 2.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
 
     padding-top: 5%;
@@ -186,11 +214,13 @@ a.linkedin:hover{
 
 a.space{
     padding-left: 100px;
+    padding-top: 100px;
 }
 
 a.git{
     background-image: url("./icons/1x/Asset\ 8.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
 
     padding-top: 5%;
@@ -210,6 +240,82 @@ a.git:hover{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.conspace{
+    padding-top: 125px;
+}
+
+.bottom{
+
+    background-color: rgb(255, 246, 246);
+    margin: 10px;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: left;
+    font-family: "NS-Thin";
+    /* padding-bottom: 200px; */
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .nav-right a{
+        font-size: 14px;
+    }
+    h{
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+    #hello{
+        font-size: 50px; 
+    }
+
+    #hello2{
+        font-size: 18px;
+    }
+
+    a.space{
+        padding-left: 30px;
+    }
+
+    #header{
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-size: 30px;
+        font-family: "NS-Regular";
+    
+    }
+
+    a.resumeLink{
+        font-size: 16px;
+        font-family: "NS-Regular";
+        padding: 15px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(59, 59, 59);
+        text-decoration: none;
+        color: rgb(59, 59, 59);
+        /* background-image: url("./icons/mars.jpg"); */
+    }
+    
+    a.resumeLink:hover{
+        /* font-family: "NS-Regular"; */
+        color: rgb(255, 100, 100);
+        border-color: rgb(255, 142, 142);
+        background-image: url("./photos/moonnew.jpg");
+        background-position: center;
+    }
+
+    .divspace{
+        padding: 20px;
+    }
+
+    .conspace{
+        padding: 20px;
+    }
+}
+
 
 
 
