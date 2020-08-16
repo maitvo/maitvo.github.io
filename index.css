@@ -118,7 +118,7 @@ h.bold{
     padding-right: 12%;
     text-align: left;
     font-family: "NS-Light";
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 200px;
 
 }
@@ -132,7 +132,7 @@ h.bold{
     padding-right: 12%;
     text-align: left;
     font-family: "NS-Light";
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 200px;
 }
 
@@ -142,6 +142,22 @@ h.bold{
     font-size: 40px;
     font-family: "NS-Regular";
 
+}
+
+#res-experience{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 15px;
+}
+
+.experience a{
+    text-decoration: none;
+    font-family: "NS-Bold";
+    color: rgb(255, 100, 100);
+}
+
+#logos{
+    text-align: center;
 }
 
 a.resumeLink{
@@ -167,6 +183,19 @@ a.resumeLink:hover{
 .reslink{
     width: 100%;
     text-align: center;
+}
+
+h.place{
+    font-family: "NS-Regular";
+    /* font-style: italic; */
+}
+
+#wright{
+    font-style: italic;
+}
+
+#wright{
+    float: right;
 }
 
 /* Meet--------------------------------------------------------------------------------------------- */
