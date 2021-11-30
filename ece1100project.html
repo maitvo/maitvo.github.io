@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ece1100project.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./photos/profile.png">
+</head>     
+
+<title>Mai Vo</title>
+
+<div class="navbar">
+
+    <div class="nav-right">         
+        <a href="index.html">home</a>
+        <a href="index.html">about</a>
+        <a href="index.html">experience</a>
+        <a href="index.html">goals</a>
+        <a href="index.html">contact</a>  
+    </div>
+        
+</div>
+</html>
+
+<div class="main">
+
+    <div class="project">
+        <h>
+            For my ECE 1100 project, I decided to learn how to better use Kicad and create my own PCB
+            from scratch. I've done projects where I help write the schematic, or a I help do the layout 
+            or placement of components. I've never built a PCB from the ground up, so I wanted to be able to do just that for 
+            this project. 
+            <br><br>
+            First, I knew I wanted to put the design in a certain format and to do that, 
+            I needed to put a bunch of LEDs on the board. Before making the schematic, I made a diagram of the design 
+            with all the LEDs placed where I wanted and labeled them numerically.
+            <br><br>
+            <img src="pcbsample.jpg" class="center">
+            <br><br>
+            Here's the schematic:
+            <br><br>
+            <img src="pcbschem.jpg" class="center">
+            <br><br>
+            This schematic showcases 37 LEDs, paired with 13 resistors. It uses two coin batteries and uses 
+            a switch to turn the circuit on and off.
+
+            <br><br>
+            Here's the layout:
+            <br><br>
+            <img src="pcb.jpg" class="center">
+            <br><br>
+            I've placed the LEDs and resistors in a way that accomodates the design I wanted. In turn, I then had to 
+            route all the connections. KiCad automatically shows you where you should route, so I routed it accordingly
+            and in a way that's easy for it to fit on the board and looks good.
+            <br><br>
+            After the PCB was finished and all laid out, I sent it to JLCPCB to print so I could place all the components on it and 
+            have the LEDs light up.
+            <br><br>
+            Here's a picture of the printed bare PCB:
+            <br><br>
+            <img src="printedpcbbare.jpg" class="center">
+            <br><br>
+            Originally, I wanted to have blue LEDs on the bottom row, red LEDs on the middle row, and green LEDs on the top row.
+            When I was soldering, all the blue LEDs worked fine, but I quickly found out that the red LEDs weren't turning on as red.
+            They were turning on as white. I checked the red LED specifications and found that 
+            red LEDs have a lower voltage drop than the others. I didn't account for that in my schematic design and attempted to color the LEDs with a 
+            red expo marker, but it didn't work very well.
+            <br><br>
+            After soldering the LEDs on, I soldered the resistors on and soldered the battery cases and switch onto the board. When everything was done, 
+            the PCB could now be used.
+            <br><br>
+            Here is the finished PCB:
+            <br><br>
+            <img src="pcbon.jpg" class="center">
+            <br><br>
+            Now, I have a PCB that's portable and that lights up whenever I switch it on. I wanted to make this to have as a wall decoration in my living room.
+
+
+
+        </h>
+    </div>
+</div>
