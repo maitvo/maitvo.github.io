@@ -34,22 +34,99 @@ h.bold{
     width: 50%;
 }
 
+/* body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  z-index: -1;
+  animation: blobDrift 40s ease-in-out infinite alternate;
+}
+body::before {
+  background: #b4c9b4;
+  top: 10%; left: 15%;
+}
+body::after {
+  background: #dce6d7;
+  top: 60%; left: 70%;
+  animation-delay: 10s;
+}
+@keyframes blobDrift {
+  from { transform: translate(0,0) scale(1); }
+  to   { transform: translate(100px, -60px) scale(1.2); }
+} */
+
+/* .floaties {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .floaties span {
+    position: absolute;
+    bottom: -150px;
+    background: rgba(150, 170, 150, 0.2); /* sage tint */
+    /* border-radius: 50%;
+    animation: floatUp 30s linear infinite;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 0;
+    }
+    20% { opacity: 0.5; }
+    100% {
+      transform: translateY(-120vh) scale(1);
+      opacity: 0;
+    }
+  } */ 
+
 
 
 
 /* navigation horizontal bar --------------------------------------------------------------------------------------------------- */
 
-.navbar{
+/*.navbar{
     overflow: hidden;
     padding-top: 1%;
     padding-bottom: 1%;
     background-image: url("./photos/stars.jpg");
-    opacity: 70%;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)); */
+    /* opacity: 70%;
     font-family: "NS-Light";
     position: fixed;
     width: 100%;
- 
+    z-index: 1000;
+
+    /* This fades the image itself, not a gradient overlay */
+    /* -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+} */ 
+
+
+
+.navbar {
+    overflow: hidden;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: linear-gradient(to bottom, rgb(117, 75, 75), rgba(198, 128, 128, 0));
+    font-family: "NS-Light";
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 .nav-right{
     float: right;
@@ -66,18 +143,16 @@ h.bold{
     font-size: 17px;
 }
 
-.nav-right a:hover{
-    background-image: url("./photos/moonnew.jpg");
+.nav-right a:hover,
+.nav-right a.active {
     color: rgb(255, 31, 31);
 }
 
 
-/* ----------------------------------------------------------------------------------------------------- */
+/* Intro ----------------------------------------------------------------------------------------------------- */
 
-
-
-
-.intro{    
+.intro {
+    position: relative;
     color: rgb(255, 255, 255);
     padding-top: 200px;
     padding-bottom: 500px;
@@ -86,10 +161,14 @@ h.bold{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-
-
+    /* Make the bottom of the section transparent so next section shows through */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+  }
 
 #hello{
     font-size: 120px; 
@@ -106,13 +185,13 @@ h.bold{
     font-family: "NS-Regular";
 }
 
-/* --------------------------------------------------------------------------- */
+/* About --------------------------------------------------------------------------- */
 
 .about{
     /* margin-top: 1000px; */
     /* padding-top: 50%; */
 
-    background-color: rgb(255, 190, 190);
+    /* background-color: rgb(255, 190, 190); */
     margin: 10px;
     padding-left: 12%;
     padding-right: 12%;
@@ -123,10 +202,42 @@ h.bold{
 
 }
 
+#about_container {
+    display: flex;               /* side by side layout */
+    align-items: flex-start;     /* top-align text & images */
+    gap: 40px;                   /* space between text and images */
+    flex-wrap: wrap;             /* allows wrapping on smaller screens */
+    margin: 50px 20px;           /* optional page spacing */
+}
+
+#about_intro {
+    flex: 1;                     /* text takes remaining space */
+    min-width: 300px;            /* ensures it doesn’t get too narrow */
+}
+
+#about_pics {
+    display: flex;                /* images side by side */
+    gap: 20px;                    /* space between images */
+    flex-shrink: 0;               /* prevents shrinking on smaller screens */
+}
+
+/* education-------------------------------------------------------------------------------------------------------------*/
+
+.education{
+    /* background-color: rgb(255, 234, 234); */
+    margin: 10px;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: left;
+    font-family: "NS-Light";
+    font-size: 17px;
+    padding-bottom: 200px;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 .experience{
-    background-color: rgb(252, 212, 212);
+    /* background-color: rgb(252, 212, 212); */
     margin: 10px;
     padding-left: 12%;
     padding-right: 12%;
@@ -140,7 +251,10 @@ h.bold{
     padding-top: 90px;
     padding-bottom: 65px;
     font-size: 40px;
-    font-family: "NS-Regular";
+    font-family: "Georgia";
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 142, 142); /* custom color */
+    text-decoration-thickness: 3px; /* thickness of underline */
 
 }
 
@@ -187,7 +301,14 @@ a.resumeLink:hover{
 
 h.place{
     font-family: "NS-Regular";
+    font-size: 25px;
     /* font-style: italic; */
+}
+
+h.title{
+    font-family: "NS-Regular";
+    /* font-size: 25px; */
+    font-style: italic;
 }
 
 #wright{
@@ -198,10 +319,10 @@ h.place{
     float: right;
 }
 
-/* goals-------------------------------------------------------------------------------------------------------------*/
+/* beyond work-------------------------------------------------------------------------------------------------------------*/
 
-.goals{
-    background-color: rgb(255, 234, 234);
+.beyond_work{
+    /* background-color: rgb(255, 234, 234); */
     margin: 10px;
     padding-left: 12%;
     padding-right: 12%;
@@ -209,8 +330,154 @@ h.place{
     font-family: "NS-Light";
     font-size: 17px;
     padding-bottom: 200px;
+    align-items: center;
+    
 }
 
+/* Container for both boxes */
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin: 0px auto;
+    width: 80%; /* centers and limits total width */
+  }
+  
+  /* Individual box styling */
+  .box {
+    flex: 0 0 50%; /* each takes exactly half the width */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  /* On hover: lift slightly + soft glow */
+  .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 900px) {
+    .section-container {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+  
+    .box {
+      width: 100%;
+    }
+  }
+  
+  .box-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box-title {
+    font-family: 'NS-Light', sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #24292e; /* GitHub dark color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.github-btn:hover {
+    background-color: #444c56;
+}
+
+.photo-center {
+    place-items: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    width: min(90vw, 600px);
+    aspect-ratio: 1 / 1;
+}
+
+
+.tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--tile-radius);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.tile:hover img {
+    transform: scale(1.1);
+}
+
+/* Optional subtle overlay */
+.tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.tile:hover::after {
+    opacity: 1;
+}
+
+/* Optional caption */
+.caption {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tile:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Meet--------------------------------------------------------------------------------------------- */
 
 .contact{
@@ -225,65 +492,75 @@ h.place{
     font-size: 20px;
 }
 
-.links{
-    padding-top: 12%;
-    padding-bottom: 12%;
-    width: 100%;
-    text-align: center;
-}
-
-a.linkedin{
-    background-image: url("./icons/1x/Asset\ 2.png");
+/* Container for both icons */
+.links {
+    display: flex;
+    justify-content: center; /* centers icons horizontally */
+    align-items: center;
+    gap: 80px; /* space between icons */
+    margin-top: 50px;
+  }
+  
+  /* ===== LINKEDIN ===== */
+  a.linkedin {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/1x/Asset 2.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 11%;
-    padding-left: 11%;
-    /* border-style: solid; */
-    /* border-width: 2px;
-    background-repeat: no-repeat;
-    border-color: rgb(59, 59, 59); */
-}
-
-a.linkedin:hover{
-    background: none;
-    background-image: url("./icons/1x/Asset\ 13.png");
+    background-size: contain;
+  }
+  
+  /* overlay hover image */
+  a.linkedin::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./icons/1x/Asset 13.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-a.space{
-    padding-left: 100px;
-    padding-top: 100px;
-}
-
-a.git{
-    background-image: url("./icons/1x/Asset\ 8.png");
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* fade in hover image */
+  a.linkedin:hover::after {
+    opacity: 1;
+  }
+  
+  /* ===== GITHUB ===== */
+  a.git {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("./icons/1x/Asset 8.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 11%;
-    padding-left: 11%;
-    /* border-style: solid; */
-    /* border-width: 2px;
-    border-color: rgb(59, 59, 59);
-    background-repeat: no-repeat; */
-}
-
-a.git:hover{
-    background: none;
-    background-size: 100%;
-    background-image: url("./icons/1x/Asset\ 18.png");
-    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  /* overlay hover image for GitHub */
+  a.git::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./icons/1x/Asset 18.png");
     background-position: center;
-}
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* fade in hover image */
+  a.git:hover::after {
+    opacity: 1;
+  }
+  
 
 .conspace{
     padding-top: 125px;

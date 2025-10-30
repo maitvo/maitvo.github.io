@@ -47,3 +47,31 @@ setTimeout(function() {
     // }
     
 }, initialPause);
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.nav-right a');
+    const currentURL = window.location.href;
+
+    links.forEach(link => {
+        // Use includes instead of strict equality for more flexibility
+        if(currentURL.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.nav-right a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Remove active from all links
+            links.forEach(l => l.classList.remove('active'));
+
+            // Add active to the clicked link
+            this.classList.add('active');
+        });
+    });
+});

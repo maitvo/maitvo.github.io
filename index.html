@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="./photos/profile.png">
+    <link rel="icon" href="./photos/MV.png">
 </head>     
 
 <title>Mai Vo</title>
@@ -14,7 +14,9 @@
     <div class="nav-right">         
         <a href="#home">home</a>
         <a href="#about">about</a>
+        <a href="#edu">education</a>
         <a href="#exper">experience</a>
+        <a href="#bey">beyond work</a>
         <a href="#con">contact</a>  
     </div>
         
@@ -23,10 +25,6 @@
 
 <div class="main" >
     <a id="home"></a>
-
-    
-    
-    
     <div class="intro">
 
         <div id="intro-text">
@@ -35,7 +33,7 @@
             </div>
             <script src = "index.js"></script>
             <div id="hello2">
-                Continue on to learn more about my experiences.
+                Engineer, creator, traveller - lover of solving hard problems.
             </div>
         </div>
 
@@ -44,25 +42,56 @@
     </div>
 
     <div class="about">
-
         <a id="about"></a>
-
         <div id="header">
             About
         </div>
+        <div id="about_container">
+            <div id="about_intro">
+                <h>
+                    Avionics Engineer II at SpaceX working on Starship Avionics, both Ship/Booster avionics, testing avionics
+                    components to full lifecycle from build to test, managing new software rollout to harness production floor,
+                    building test chambers, and more. 
+                    <br><br>
+                    I'm very passionate about building the next thing that'll change the world.
+                    Some of my interests include golfing, cooking, health/wellness, and playing with my dog.
+                </h>
+            </div>
+        
+            <div id="about_pics">
+                <img src="photos/dog.png" width="300px">
+                <img src="photos/maibooster.jpg" width="325px">
+            </div>
+        </div>
+    </div>
 
-        
-        
-    <h>
-        Currently Avionics Engineer II at SpaceX working on Starship Avionics, both Ship/Booster avionics, testing avionics
-        components to full lifecycle from build to test, managing new software rollout to harness production floor,
-        building test chambers, and more. 
-        <br><br>
-        Some of my interests include golfing, cooking, playing with my dog.
-    </h>
-    <br><br><br>
-    <img src="photos/dog.png" width="300px">
-    <img src="photos/maibooster.jpg" width="325px">
+    <div class="education">
+        <a id="edu"></a>
+        <div id="header">
+            Education
+        </div>
+        <div id="education_intro">
+            <h>
+                <h class="place">
+                    Georgia Institute of Technology
+                </h>
+                <div id="wright">Atlanta, GA</div>
+                <br>
+                <h class="title">
+                    B.S. Computer Engineering
+                    <br>
+                    Honors Program
+                </h>
+                <br>
+                <h>
+                Activities: Yellow Jacket Space Program, 
+                PAXC @ NASA - Exec Board,
+                WoAA National,
+                Students for the Exploration and Development of Space
+                
+                </h>
+            </h>
+        </div>
     </div>
 
 
@@ -79,7 +108,7 @@
             <img src="logo/lockheedlogo.jpg" width="115px">
             <img src="logo/aerologo.jpg" width="83px">
             <img src="logo/yjsplogo.png" width="85px">
-            <!-- <img src="logo/ssdllogo.png" width="150px"> -->
+            <img src="logo/ssdllogo.png" width="150px">
         </div>
 
         
@@ -90,7 +119,7 @@
 
             <div class="reslink">
                 <br><br>
-                <a class="resumeLink" href="maiVoAug2025PMResume.pdf" class="center" target="_blank">Download and View Resume</a>
+                <a class="resumeLink" href="maiVoAug25Resume_1.pdf" class="center" target="_blank">Download and View Resume</a>
                 <br><br>
                 <h>Contact me if you would like an updated version of my resume.</h>
             </div>
@@ -114,22 +143,24 @@
                 <br>
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
-                    Avionics test engineering, manufacturing, project management.
+                    Avionics test engineering, manufacturing, project management. Some projects I've worked on include
+                    bringing up test stands (test rack, software) for DUT production and development testing, building chambers
+                    to increase Starbase test capabilities (torch, helium bomb, vacuum), owning a HALT/HASS chamber, managing
+                    software rollout to production floor, and managing cross-functional initiatives between multiple teams
+                    and stakeholders. Within these roles I have knowledge in test engineering (hardware dev, software dev),
+                    manufacturing, fluids, pressurized systems, hardware design using CAD, and managing projects and keeping to timelines.
                 </h>
                 <br>
+                <br>
                 <h class="title">
-                    Starship Crew & Cargo Mission Management Intern
+                    Starship Crew & Cargo Mission Management
                 </h>
                 <div id="wright">July 2023 - Feb 2025</div>
                 <br>
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
                     Partnered with NASA and internal stakeholders to review and implement mission requirements; modeled 
-                    docking adapter clearance zones in NX, resolving clearance and ventilation issues and driving requirements
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
-                    Developed a simulation server driver to fake data testing on Starship testbed using Python; with EMI 
-                    to choose and write a spectrum analyzer driver based on ranges and specs needed
+                    docking adapter clearance zones in NX; developed a simulation server driver to fake data testing on Starship
                 </h>
             </div>
             <br>
@@ -147,9 +178,7 @@
                 <br>
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
-                    Managed avionics, structures, and software teams to develop and launch a 1U cubesat; led integration testing (vibe, TVAC)
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
+                    Managed avionics, structures, and software teams to develop and launch a 1U cubesat; led integration testing (vibe, TVAC).
                     Coordinated with launch providers JAXA/Spaceflight to ensure launch readiness and mission
 
                 </h>
@@ -163,8 +192,6 @@
                     <img src="baseline_star_rate_black_18dp.png">
                     Developed acceptance test procedures for PCBA modules; debugging issues during test; designed flatsat PCBA 
                     connection 7, 52-pin cubesat panels for ease of test
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
                     Developed stress test & logging software using Python to test microcontroller for performance optimization and temperature during TVAC testing
 
                 </h>
@@ -203,11 +230,7 @@
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
                     Supported development teams with run-ahead user experience designs in a SaFE Agile environment to improve a missile simulation
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
                     Communicated with the customer, product owners, development teams, and architects to ensure designs accurately convey information architecture to the user
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
                     Solved design issues by optimizing the efficiency of the design to showcase large quantities of information to the users
     
                 </h>
@@ -229,8 +252,6 @@
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
                     Contributed to the user-interface of a cutting-edge proprietary satellite visualization engine using C++, OpenGL, and the Qt-based framework by adding features to make development and customer usage effortless
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
                     Optimized efficiency of usage for the web interface of a satellite intercept and rendezvous visualization tool by developing the web interface using Javascript, HTML, and CSS creating a smoother user experience
                     <br>
                 </h>
@@ -257,11 +278,9 @@
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
                     Create and design circuit schematics and developing printed circuit boards using KiCad for propulsion electronics and avionic sensors for a rocket to space
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
+
                     Developing a schematic for a field reader to test sensor functionality on the testing field using Altium
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
+
                     Developed a light, encompassing schematic for the engine controller to turn engine valves on or off for testing purposes, interfacing with a control room and teensy
                     <br>
                 </h>
@@ -275,8 +294,6 @@
                 <h>
                     <img src="baseline_star_rate_black_18dp.png">
                     Developed YJSP engineering specifications; integrating and testing different projects by each team using models and simulations; returning necessary feedback
-                    <br>
-                    <img src="baseline_star_rate_black_18dp.png">
                     Interpreted software for a 6DOF simulation developed by a past engineer, documenting the code
                     <br>
                 </h>
@@ -287,11 +304,85 @@
             <br>
         </div>
 
-        <div class="divspace"></div>
+
+    </div>
+
+    <div class="beyond_work">
+        <a id="bey"></a>
+        <div id="header">
+            Beyond Work
+        </div>
+
+
+        <div class="section-container">
+        <div class="box">
 
         
+            <h>
+                I have a huge passion for cooking/baking and creating recipe content:
+            </h>
 
+            
+
+            <div class="photo-center">
+
+                <div class="photo-grid">
+                    <div class="tile">
+                    <img src="photos/cooking/ramen.jpg" alt="Tonkatsu Ramen">
+                    <span class="caption">Tonkatsu Ramen</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/fruit_vanilla_cake.jpg" alt="Vanilla Cake">
+                    <span class="caption">Vanilla Cake</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/gochujang_steak.jpg" alt="Gochujang Steak">
+                    <span class="caption">Gochujang Steak</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/matcha_icecream.jpg" alt="Matcha Ice Cream">
+                    <span class="caption">Matcha Ice Cream</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/poke.jpg" alt="Poke">
+                    <span class="caption">Poke</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/panna_cotta.jpg" alt="Panna Cotta">
+                    <span class="caption">Panna Cotta</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/trifle.jpg" alt="Trifle">
+                    <span class="caption">Trifle</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/duck_soup.jpg" alt="Duck Soup">
+                    <span class="caption">Duck Soup</span>
+                    </div>
+                    <div class="tile">
+                    <img src="photos/cooking/red_velvet_cookies.jpg" alt="Red Velvet Cookies">
+                    <span class="caption">Red Velvet Cookies</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+        </div>
+
+        <div class="box">
+            
+            <h3 class="box-title">This Website!</h3>
+            <img src="photos/website.png" alt="Website Screenshot" class="box-image">
+            
+            <a href="https://github.com/maitvo/maitvo.github.io" target="_blank" rel="noopener noreferrer" class="github-btn">
+                View on GitHub
+            </a>
+        </div>
         
+
+        </div>
+
     </div>
 
     <div class="contact">
@@ -299,8 +390,6 @@
         <div id="header">
             Contact Me
         </div>
-
-        
 
         <h>
             You can find me on LinkedIn or you can check out some of my coding
@@ -313,16 +402,15 @@
             
             <a class="linkedin" href="https://www.linkedin.com/in/mai-truc-vo" target="_blank"></a>
             
-            <a class="space"></a>
+            <!-- <a class="space"></a> -->
             
-
             <a class="git" href="https://github.com/maitvo" target="_blank"></a>
         
-            <div class="conspace"></div>
-
-            <h>Email: maitrucvo00@gmail.com</h>
-            
+            <!-- <div class="conspace"></div> -->
         </div>
+        <h>Email me at: </h>
+
+        <a href="mailto:maitrucvo00@gmail.com">maitrucvo00@gmail.com</a>
         
 
     </div>
@@ -337,6 +425,73 @@
 
 </div>
 
-</html>
+<!-- Floatie background code
+<div id="floaties-container"></div>
+
+<style>
+  /* Make the floaties container cover the whole page */
+  #floaties-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* So it doesn’t block clicks */
+    overflow: hidden;
+    z-index: 0; /* Behind your content */
+  }
+
+  .floatie {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: floatie-move linear infinite;
+  }
+
+  @keyframes floatie-move {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-50px) translateX(20px) rotate(180deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-100px) translateX(0) rotate(360deg);
+      opacity: 0.8;
+    }
+  }
+</style>
+
+<script>
+  const container = document.getElementById('floaties-container');
+  const floatieCount = 30; // number of floaties
+
+  for (let i = 0; i < floatieCount; i++) {
+    const floatie = document.createElement('div');
+    floatie.classList.add('floatie');
+    
+    // Random size
+    const size = Math.random() * 10 + 10; // 10px to 20px
+    floatie.style.width = `${size}px`;
+    floatie.style.height = `${size}px`;
+    
+    // Random position
+    floatie.style.left = `${Math.random() * 100}%`;
+    floatie.style.top = `${Math.random() * 100}%`;
+
+    // Random animation duration and delay
+    floatie.style.animationDuration = `${5 + Math.random() * 5}s`;
+    floatie.style.animationDelay = `${Math.random() * 5}s`;
+
+    container.appendChild(floatie);
+  }
+</script>
+
+</html> -->
 
 
